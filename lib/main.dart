@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(100.0),
                         child: Image.asset(
-                          'images/logos/logo_contraregra.png',
+                          'assets/images/logos/logo_contraregra.png',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -75,8 +75,16 @@ class _HomeState extends State<Home> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 80.0,
-                            fontFamily: 'Sedgwick',
+                            fontFamily: 'Pacifico',
                             fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                offset: Offset(4.0, 4.0),
+                                blurRadius: 10.0,
+                                color: Colors.deepOrange.withOpacity(0.5)
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -143,7 +151,7 @@ class _HomeState extends State<Home> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(100.0),
                         child: Image.asset(
-                          'images/logos/logo_lab_informatica.png',
+                          'assets/images/logos/logo_lab_informatica.png',
                           fit: BoxFit.cover,
                           width: 50,
                           height: 50,
